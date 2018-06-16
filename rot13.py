@@ -7,7 +7,10 @@ import sys
 from os.path import basename
 
 if len(sys.argv) != 2:
-    print 'Usage: %s text' % basename(sys.argv[0])
+    print 'Usage: %s textfile' % basename(sys.argv[0])
     sys.exit(1)
 
-print sys.argv[1].decode('rot13')
+filepath=sys.argv[1]
+file = open(filepath, "r")
+text=text.read()
+print a.decode('rot13')
